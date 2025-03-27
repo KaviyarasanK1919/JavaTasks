@@ -6,19 +6,15 @@ public class Book {
     private String author;
     private double price;
     private String isbn;
-    
-    
 
 	private static int totalBooks = 0;
-    
-    public Book() {
-        totalBooks++;
-    }
-	public Book(String id, String title, String author, double price) {
+
+	public Book(String id, String title, String author, double price, String isbn) {
 		this.id = id;
 		this.title = title;
 		this.author = author;
 		this.price = price;
+		this.isbn = isbn;
 		totalBooks++;
 	}
 	public String getId() {
